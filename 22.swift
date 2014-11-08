@@ -8,3 +8,6 @@ let result = numbers.map({
 
 println("numbers = \(numbers)")
 println("result = \(result)")
+
+let result2 = numbers.map({ number in 3 * number })
+println("result2 = \(result2)")
