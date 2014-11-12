@@ -11,7 +11,7 @@ class NamedShape {
   }
 }
 
-class Squire: NamedShape {
+class Square: NamedShape {
   var sideLength: Double
 
   init(sideLength: Double, name: String) {
@@ -28,6 +28,7 @@ class Squire: NamedShape {
     return "A square with sides of length \(sideLength)."
   }
 }
-let test = Squire(sideLength: 5.2, name: "my test squire")
-println("area = \(test.area())")
-println(test.simpleDescription())
+
+let square = Square(sideLength: 5.2, name: "my squire")
+println("area = \(square.area())")
+println(square.simpleDescription())
