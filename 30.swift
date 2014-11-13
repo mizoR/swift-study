@@ -30,3 +30,8 @@ println("                    four = \(four)")
 println("four.simpleDescription() = \(four.simpleDescription())")
 println("           four.rawValue = \(four.rawValue)")
 
+if let convertedRank = Rank.init(rawValue: 3) {
+  let threeDescription = convertedRank.simpleDescription()
+
+  println(threeDescription)
+}
