@@ -29,3 +29,19 @@ b.adjust()
 
 let bDescription = b.simpleDescription
 println(bDescription)
+
+extension Int: ExampleProtocol {
+  var simpleDescription: String {
+    return "The number \(self)"
+  }
+
+  mutating func adjust() {
+    self += 42
+  }
+}
+
+var number: Int = 7
+println(number.simpleDescription)
+number.adjust()
+println(number.simpleDescription)
+
